@@ -275,3 +275,5 @@ by utilizing edge caching.
 # Delete the Stack
 
 Once you are done exploring the pipeline, you should delete the stack by running: `aws cloudformation delete-stack $USER`
+
+Deletion can take 5-10 minutes.
