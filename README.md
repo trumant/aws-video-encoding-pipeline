@@ -144,9 +144,9 @@ Let's list the contents of the mp4 prefix:
 And here, you will see output like:
 
 ```sh
-2019-07-27 12:11:01   21882183 boat_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4
-2019-07-27 12:11:01   36134488 boat_Mp4_Avc_Aac_16x9_1920x1080p_24Hz_6Mbps_qvbr.mp4
-2019-07-27 12:11:11  126830719 boat_Mp4_Hevc_Aac_16x9_3840x2160p_24Hz_20Mbps_qvbr.mp4
+2019-07-27 12:11:01   21882183 sea_Mp4_Avc_Aac_16x9_1280x720p_24Hz_4.5Mbps_qvbr.mp4
+2019-07-27 12:11:01   36134488 sea_Mp4_Avc_Aac_16x9_1920x1080p_24Hz_6Mbps_qvbr.mp4
+2019-07-27 12:11:11  126830719 sea_Mp4_Hevc_Aac_16x9_3840x2160p_24Hz_20Mbps_qvbr.mp4
 ```
 
 Which shows that our source MP4 video was encoded into 3 different resolutions.
