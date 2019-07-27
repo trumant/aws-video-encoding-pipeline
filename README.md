@@ -1,5 +1,8 @@
 # Video Encoding Pipeline
 
+This repository is a simple walk through of the solution described in
+https://aws.amazon.com/solutions/video-on-demand-on-aws/
+
 # Configure the CloudFormation Stack
 
 Edit the `parameters.json` file and replace `<YOUR_EMAIL_HERE>` with your email address
@@ -14,7 +17,7 @@ Run
 aws cloudformation create-stack \
     --stack-name $USER \
     --template-url https://s3.amazonaws.com/solutions-reference/video-on-demand-on-aws/latest/video-on-demand-on-aws.template \
-    --parameters file:////Users/ttruma200/Dropbox/the_item/parameters.json \
+    --parameters file:///$PWD/parameters.json \
     --capabilities CAPABILITY_IAM
 ```
 
@@ -268,3 +271,7 @@ Run `aws cloudfront list-distributions` which will produce output like:
 This shows that our CloudFormation Stack set-up a CloudFront distribution of the videos
 in our S3 bucket. This CloudFront distribution will give our user's faster access to our videos
 by utilizing edge caching.
+
+# Delete the Stack
+
+Once you are done exploring the pipeline, you should delete the stack by running: `aws cloudformation delete-stack $USER`
